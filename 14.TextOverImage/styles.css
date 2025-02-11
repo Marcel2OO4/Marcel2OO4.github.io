@@ -1,0 +1,59 @@
+/* styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Classic cartoon font */
+    overflow: hidden; /* Prevents scrolling due to the image overflow */
+}
+
+.image-container {
+    position: relative;
+    width: 100vw;  /* Viewport width */
+    height: 100vh; /* Viewport height */
+    overflow: hidden;
+}
+
+.image-container img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  /* Centers the image */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Ensures the image covers the entire screen while maintaining aspect ratio */
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px 60px; /* Larger padding for bigger text */
+    background-color: rgba(173, 216, 230, 0.8); /* Light blue background with transparency */
+    color: white;
+    font-size: 4rem; /* Bigger text */
+    font-weight: bold;
+    text-align: center;
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5); /* Optional: adds a little shadow for better visibility */
+}
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px 60px;
+    background-color: rgba(173, 216, 230, 0.8);
+    color: white;
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5);
+    z-index: 10; /* Ensures the text is on top */
+}
