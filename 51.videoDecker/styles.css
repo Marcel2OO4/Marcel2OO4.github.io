@@ -1,0 +1,34 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Make the video cover the entire screen */
+.background-video {
+    position: fixed;  /* Keeps the video in place */
+    top: 0;
+    left: 0;
+    width: 100vw;  /* Covers the full width of the screen */
+    height: 100vh; /* Covers the full height of the screen */
+    object-fit: cover; /* Ensures the video scales properly */
+    z-index: -1;  /* Moves the video behind other elements */
+}
+
+/* Style for the quote box */
+.quote-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers the box */
+    background-color: rgba(255, 255, 0, 0.8); /* Yellow with slight transparency */
+    color: black; /* Black text */
+    font-weight: bold; /* Bold text */
+    font-size: 24px;
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    text-align: center;
+    max-width: 60%; /* Prevents the text box from being too wide */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adds a slight shadow */
+}
