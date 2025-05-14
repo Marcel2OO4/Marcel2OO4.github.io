@@ -1,0 +1,46 @@
+/* Use a soft, welcoming font */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Quicksand', sans-serif;
+  overflow: hidden;
+}
+
+/* Background video style */
+#background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Centered audio buttons at the bottom */
+.audio-buttons {
+  position: fixed;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 1rem;
+  z-index: 10;
+}
+
+/* Button styling */
+.audio-button {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.audio-button:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
