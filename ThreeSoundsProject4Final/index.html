@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Audio Buttons with Background Video</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Background Video -->
+  <video autoplay muted loop playsinline id="background-video">
+    <source src="videos/video1.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Audio Buttons -->
+  <div class="audio-buttons">
+    <button class="audio-button" onclick="playAudio('audio/audio1.aac')">Audio 1</button>
+    <button class="audio-button" onclick="playAudio('audio/audio2.aac')">Audio 2</button>
+    <button class="audio-button" onclick="playAudio('audio/audio3.aac')">Audio 3</button>
+    <button class="audio-button" onclick="playAudio('audio/audio4.aac')">Audio 4</button>
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+    const audioPlayer = new Audio();
+
+    function playAudio(src) {
+      audioPlayer.pause();
+      audioPlayer.src = src;
+      audioPlayer.play();
+    }
+  </script>
+
+</body>
+</html>
